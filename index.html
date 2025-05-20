@@ -3,39 +3,50 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Stronka test</title>
+  <title>DeepHunt</title>
   <style>
-    @keyframes distort {
-      0% { transform: scale(1) rotate(0deg); }
-      25% { transform: scale(1.01) rotate(0.1deg); }
-      50% { transform: scale(1.02) rotate(-0.1deg); }
-      75% { transform: scale(1.01) rotate(0.05deg); }
-      100% { transform: scale(1) rotate(0deg); }
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
     }
 
     body {
-      margin: 0;
-      height: 100vh;
-      background: #ffffff;
+      background-image: url('sky.jpg'); 
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
       display: flex;
-      justify-content: center;
+      flex-direction: column;
+      justify-content: flex-end; 
       align-items: center;
-      font-family: 'Segoe UI', sans-serif;
     }
 
-    h1 {
-      font-size: 4rem;
-      color: #000000;
-      text-shadow:
-        0 0 5px white,
-        0 0 10px white,
-        0 0 20px white;
-      animation: distort 3s infinite;
-      transition: all 0.3s ease-in-out;
+    .link-container {
+      margin-bottom: 40px;
+      background: rgba(0, 0, 0, 0.6); 
+      padding: 10px 20px;
+      border-radius: 10px;
+    }
+
+    .link-container a {
+      color: #ffffff;
+      font-size: 20px;
+      text-decoration: none;
+      font-family: sans-serif;
+    }
+
+    .link-container a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <h1>Chujnia jak skurwysyn (no hej :3)</h1>
+  <div class="center-text">
+    Welcome to the hunt
+  </div>
+  <div class="link-container">
+    <a href="first.html">ENTER</a>
+  </div>
 </body>
 </html>
