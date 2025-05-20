@@ -31,19 +31,19 @@
       text-shadow: 0 0 10px black;
     }
 
-    marquee.glitch {
-      font-size: 20px;
-      padding: 10px 0;
-      color: #fff;
-      background: rgba(0, 0, 0, 0.4);
-      text-shadow:
-        0 0 2px red,
-        1px 0 blue,
-        -1px 0 lime,
-        0 0 10px rgba(255, 255, 255, 0.3);
-      animation: glitch-flicker 1s infinite alternate;
-      filter: blur(0.8px) brightness(1.2);
-    }
+  marquee.glitch {
+    font-size: 20px;
+    padding: 10px 0;
+    color: #ff0000; 
+    background: rgba(0, 0, 0, 0.9); 
+    text-shadow:
+      0 0 2px black,
+      1px 0 #ff0000,
+      -1px 0 #000,
+      0 0 5px #ff0000;
+    animation: glitch-flicker 1s infinite alternate;
+    filter: brightness(1.1);
+}
 
     @keyframes glitch-flicker {
       0%   { text-shadow: 1px 0 red, -1px 0 blue; transform: translateX(0); }
@@ -61,7 +61,7 @@
   <div class="top-text">Choose.</div>
 
  
-  <marquee class="glitch" behavior="scroll" direction="left">
+  <marquee class="glitch" behavior="scroll" direction="left" scrollamount="35">
     The term "sadist" in popular usage describes one who obtains pleasure from indiscriminate
 brutality. Actually, though, a true sadist is selective. He carefully chooses from the vast reserve of
 appropriate victims, and takes great delight in giving those who thrive on misery the fulfillment of
@@ -73,11 +73,3 @@ and whipped, the real sadist is glad to oblige!
 </body>
 </html>
 
-
-
-The term "sadist" in popular usage describes one who obtains pleasure from indiscriminate
-brutality. Actually, though, a true sadist is selective. He carefully chooses from the vast reserve of
-appropriate victims, and takes great delight in giving those who thrive on misery the fulfillment of
-their desires. The "well-adjusted" sadist is epicurean in selecting those on whom his energies will
-be well-spent! If a person is healthy enough to admit he is a masochist and enjoys being enslaved
-and whipped, the real sadist is glad to oblige!
