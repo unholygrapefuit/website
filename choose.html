@@ -21,6 +21,30 @@
       display: block;
     }
 
+.image-row {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+  flex-wrap: wrap; /* w razie wąskich ekranów */
+}
+
+.image-row img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 2px solid white;
+  border-radius: 10px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  cursor: pointer;
+}
+
+.image-row img:hover {
+  transform: scale(1.05);
+  filter: brightness(1.2) contrast(1.1);
+}
+
+    
     .top-text {
       padding: 30px;
       text-align: center;
@@ -69,6 +93,13 @@ be well-spent! If a person is healthy enough to admit he is a masochist and enjo
 and whipped, the real sadist is glad to oblige!
   </marquee>
 
+<div class="image-row">
+  <a href="well.html"><img src="well.png" alt="Link1"></a>
+  <a href="smile.html"><img src="smile.png" alt="Link2"></a>
+  <a href="knife.html"><img src="knife.png" alt="Link3"></a>
+  <a href="envelope.html"><img src="envelope.png" alt="Link4"></a>
+</div>
+  
 </body>
 </html>
 
