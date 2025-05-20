@@ -18,9 +18,7 @@
       background-repeat: no-repeat;
       font-family: monospace;
       color: white;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+      display: block;
     }
 
     .top-text {
@@ -43,6 +41,7 @@
       0 0 5px #ff0000;
     animation: glitch-flicker 1s infinite alternate;
     filter: brightness(1.1);
+    margin-top: 10vh;
 }
 
     @keyframes glitch-flicker {
@@ -61,7 +60,7 @@
   <div class="top-text">Choose.</div>
 
  
-  <marquee class="glitch" behavior="scroll" direction="left" scrollamount="35">
+  <marquee class="glitch" behavior="scroll" direction="left" scrollamount="100">
     The term "sadist" in popular usage describes one who obtains pleasure from indiscriminate
 brutality. Actually, though, a true sadist is selective. He carefully chooses from the vast reserve of
 appropriate victims, and takes great delight in giving those who thrive on misery the fulfillment of
